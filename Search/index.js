@@ -6,7 +6,7 @@ var authConfig = {
    //add themes color, darkmode
   main_color: '', // red | pink | purple | deep-purple | indigo | blue | light-blue | cyan | teal | green | light-green | lime yellow | amber orange | deep-orange | brown | greyblue-grey
   accent_color: '', // red | pink | purple | deep-purple | indigo | blue | light-blue | cyan | teal | green | light-green | lime | yellow | amber | orange | deep-orange
-  dark_theme: false, // true for dark theme
+  dark_theme: true, // true for dark theme
   // client_id & client_secret - PLEASE USE YOUR OWN!
   client_id: '202264815644.apps.googleusercontent.com',
   client_secret: 'X4Z3ca8xfWDb1Voo-F9a7ZxJ',
@@ -30,13 +30,15 @@ var authConfig = {
       user: 'admin',
       pass: ''
     },
-    {
+    /**
+{
       id: 'drive_id',
       name: 'Sample2',
       user: 'admin2',
       pass: 'index'
     },
-    {
+    /**
+{
       id: 'folder_id',
       name: 'Sample3',
       user: 'admin3',
@@ -49,7 +51,7 @@ var authConfig = {
     * If the set value is too small, the incremental loading (page loading) of the scroll bar of the file list page will be invalid
     * Another effect of this value is that if the number of files in the directory is greater than this setting (that is, multiple pages need to be displayed), the results of the first listing directory will be cached.
    */
-  files_list_page_size: 500,
+  files_list_page_size: 100,
   /**
    * The number displayed on each page of the search results page. [Recommended setting value is between 50 and 1000];
     * If the setting is greater than 1000, it will cause an error when requesting drive api;
